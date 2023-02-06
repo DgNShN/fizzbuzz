@@ -1,11 +1,11 @@
 let sayi = 0
 input.onButtonPressed(Button.A, function () {
-    if (sayi % 3 == 0) {
-        basic.showString("Fizz")
+    if (0 == sayi % 15) {
+        basic.showString("Fizz+Buzz")
     } else if (sayi % 5 == 0) {
         basic.showString("Buzz")
-    } else if (0 == sayi % 15) {
-        basic.showString("Fizz+Buzz")
+    } else if (sayi % 3 == 0) {
+        basic.showString("Fizz")
     }
 })
 basic.forever(function () {
